@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homework</title>
+</head>
+
+<body>
+
+    <script>
+        "use strict";
+        
+        function getUserNumber(prompt_text) {
+  let num = null;
+  while (isNaN(num) || !Number.isInteger(num)) {
+    num = parseInt(prompt(prompt_text));
+  }
+  
+  return num;
+}
+ 
+const num1 = getUserNumber('Enter number 1:');
+const num2 = getUserNumber('Enter number 2:');
+ 
+if (num1 > num2) {
+ alert('First number is larger than the second.');
+} else if (num1 < num2) {
+ alert('Second number is larger then the first.');
+} else {
+ alert('Numbers are equal.');
+}
+    </script>
+</body>
+
+</html>
