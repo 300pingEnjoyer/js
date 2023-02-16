@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homework</title>
+</head>
+
+<body>
+
+    <script>
+        "use strict";
+
+       
+        function getRandomArbitary(min, max) 
+{
+  return Math.floor(Math.random() * (max - min) + min);
+}
+ 
+var n = 10; 
+var arr = [];
+for (var i = 0; i < n; i++) {
+        arr[i] = getRandomArbitary(0, 9);
+        document.write(arr[i] + '<br>'); 
+    }
+    </script>
+</body>
+
+</html>
