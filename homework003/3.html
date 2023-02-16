@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Создание функций</title>
+</head>
+<body>
+<script>
+var A = prompt ('Введите первое число', '');
+var B = prompt ('Введите второе число', '');
+var C = prompt ('Введите третье число', '');
+ 
+var Max = A;
+if (B > Max) Max = B;
+if (C > Max) Max = C;
+ 
+document.write ('<p>из трёх введённых чисел: <b>' + A + '</b>, <b>' + B + '</b> и <b>' + C + '</b>');
+document.write ('<p>максимальным является число <b>' + Max + '</b>');
+</script>
+</body>
+</html>
