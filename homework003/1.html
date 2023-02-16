@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Создание функций</title>
+</head>
+<body>
+<script>
+var ans = 0;
+var num = prompt("Введите число");
+ans =  prompt("Выберете:  1 - в квадрат, 2 - в куб, 3 - в 4 степень");
+if(ans == 1){
+alert(doubl(num));
+}else if(ans == 2){
+alert(triple(num));
+}else if(ans == 3){
+alert(quad(num));
+}else {
+alert ("Выберете верное значение");
+}
+function doubl(num){
+return num*num;
+}
+function triple(num){
+return num*num*num;
+}
+function quad(num){
+return num*num*num*num;
+}
+</script>
+</body>
+</html>
